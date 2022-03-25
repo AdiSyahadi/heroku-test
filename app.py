@@ -2,6 +2,10 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 from PIL import Image
+import xlrd
+xlrd.xlsx.ensure_elementtree_imported(False, None)
+xlrd.xlsx.Element_has_iter = True
+
 
 st.set_page_config(page_title='Survey Results')
 st.header('Survey Results 2021')
